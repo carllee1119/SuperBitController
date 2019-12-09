@@ -1,4 +1,4 @@
-﻿/*
+/*
 Copyright (C): 2010-2019, Shenzhen Yahboom Tech
 modified from liusen
 load dependency
@@ -305,6 +305,11 @@ namespace GHBit {
         else
             return false;
 
+    }
+    
+    export function RockerX(): number {
+        let value=1;
+    	return value;
     }
     
     //% blockId=GHBit_Button block="Button|num %num|value %value"
