@@ -323,7 +323,7 @@ namespace GHBit {
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function RockerY(): number {
-        let y = pins.analogReadPin(AnalogPin.P1);
+        let y = pins.analogReadPin(AnalogPin.P2);
     	return y;
     }
     
