@@ -307,6 +307,11 @@ namespace GHBit {
 
     }
     
+    //% blockId=GHBit_RockerX block="RockerX %value"
+    //% weight=96
+    //% blockGap=10
+    //% color="#C814B8"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function RockerX(): number {
         let value=1;
     	return value;
