@@ -313,8 +313,8 @@ namespace GHBit {
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function RockerX(): number {
-        let value=1;
-    	return value;
+        let temp=1;
+    	return temp;
     }
     
     //% blockId=GHBit_Button block="Button|num %num|value %value"
