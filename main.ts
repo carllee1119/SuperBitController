@@ -313,8 +313,18 @@ namespace GHBit {
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
     export function RockerX(): number {
-        let temp=1;
-    	return temp;
+        let x = pins.analogReadPin(AnalogPin.P1);
+    	return x;
+    }
+    
+    //% blockId=GHBit_RockerY block="RockerY %value"
+    //% weight=96
+    //% blockGap=10
+    //% color="#C814B8"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
+    export function RockerY(): number {
+        let y = pins.analogReadPin(AnalogPin.P1);
+    	return y;
     }
     
     //% blockId=GHBit_Button block="Button|num %num|value %value"
