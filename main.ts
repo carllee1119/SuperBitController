@@ -317,7 +317,7 @@ namespace GHBit {
     	return x;
     }
     
-    //% blockId=GHBit_RockerY block="RockerY %value"
+    //% blockId=GHBit_RockerY block="Rocker Y value %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
