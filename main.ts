@@ -264,7 +264,8 @@ namespace GHBit {
         }               
     }
     
-    //% blockId=GHBit_Rocker block="Rocker|value %value"
+/*    //% blockId=GHBit_Rocker block="Rocker|value %value"	*/
+    //% blockId=GHBit_Rocker block="JoyStick Direction|value %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
