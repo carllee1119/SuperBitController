@@ -308,22 +308,22 @@ namespace GHBit {
 
     }
     
-    //% blockId=GHBit_RockerX block="JoyStick X %value"
+    //% blockId=GHBit_JoyStickX block="JoyStick X %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
-    export function RockerX(): number {
+    export function JoyStickX(): number {
         let x = pins.analogReadPin(AnalogPin.P1);
     	return x;
     }
     
-    //% blockId=GHBit_RockerY block="JoyStick Y %value"
+    //% blockId=GHBit_JoyStickY block="JoyStick Y %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
-    export function RockerY(): number {
+    export function JoyStickY(): number {
         let y = pins.analogReadPin(AnalogPin.P2);
     	return y;
     }
