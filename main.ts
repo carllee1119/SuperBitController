@@ -220,7 +220,7 @@ namespace GHBit {
      * *****************************************************************
      * @param index
      */
-    
+ /*   
     //% blockId=GHBit_RGB_Program block="RGB_Program"
     //% weight=99
     //% blockGap=10
@@ -233,7 +233,8 @@ namespace GHBit {
         }
         return yahStrip;  
     }  
-       
+*/
+/*
     //% blockId=GHBit_RGB_Program_Close block="RGB_Program_Close"
     //% weight=98
     //% blockGap=10
@@ -244,7 +245,7 @@ namespace GHBit {
         GHBit.RGB_Program().clear();
         GHBit.RGB_Program().show();
     }
-    
+*/    
     //% blockId=GHBit_Min_Motor_Shake block="Min_Motor_Shake|value %value"
     //% weight=97
     //% blockGap=10
@@ -431,7 +432,7 @@ namespace GHBit {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    
+/*    
     //% blockId=GHBit_Servo_Handle block="Servo_Handle|num %num|value %value"
     //% weight=91
     //% blockGap=10
@@ -446,7 +447,8 @@ namespace GHBit {
         setPwm(num + 8, 0, pwm);
 
     }
-        
+*/
+/*
     //% blockId=GHBit_Ultrasonic_Handle block="ultrasonic return distance(cm)"
     //% color="#C814B8"
     //% weight=90
@@ -474,7 +476,8 @@ namespace GHBit {
       let length = (list[1] + list[2] + list[3])/3;
       return  Math.floor(length);
     }
-
+*/
+/*
     //% blockId=GHBit_RGB_Colorful block="RGB_Colorful|%value"
     //% weight=89
     //% blockGap=10
@@ -532,7 +535,8 @@ namespace GHBit {
             }
         }
     }
-    
+*/
+/*
     //% blockId=GHBit_Stepper_Motor block="Stepper_Motor|value %value|value1 %value1"
     //% weight=88
     //% blockGap=10
@@ -606,6 +610,8 @@ namespace GHBit {
             }               
         } 
     }  
+*/
+/*
     //% blockId=GHBit_Min_Motor block="Min_Motor|value %value"
     //% weight=87
     //% blockGap=10
@@ -654,7 +660,9 @@ namespace GHBit {
               break;
             }
         }               
-    }   
+    } 
+*/
+/*
     //% blockId=GHBit_Rotate block="Rotate|value %value"
     //% weight=86
     //% blockGap=10
@@ -724,7 +732,8 @@ namespace GHBit {
         }
         return a;
     }
-    
+*/
+/*
     //% blockId=GHBit_Beam block="Beam|value %value"
     //% weight=85
     //% blockGap=10
@@ -754,6 +763,6 @@ namespace GHBit {
             }
         }
     }
-    
+*/    
     
 }
