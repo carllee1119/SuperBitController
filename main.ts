@@ -308,7 +308,7 @@ namespace GHBit {
 
     }
     
-    //% blockId=GHBit_RockerX block="Rocker X value %value"
+    //% blockId=GHBit_RockerX block="JoyStick X %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
@@ -318,7 +318,7 @@ namespace GHBit {
     	return x;
     }
     
-    //% blockId=GHBit_RockerY block="Rocker Y value %value"
+    //% blockId=GHBit_RockerY block="JoyStick Y %value"
     //% weight=96
     //% blockGap=10
     //% color="#C814B8"
