@@ -467,7 +467,7 @@ namespace GHBit {
         pins.onPulsed(Pin, PulseValue.Low, body);
     }
     
-    //% blockId=GHBit_Music_Handle block="Music_Handle|%index"
+    //% blockId=GHBit_Music_Handle block="Music %index"
     //% weight=92
     //% blockGap=10
     //% color="#C814B8"
