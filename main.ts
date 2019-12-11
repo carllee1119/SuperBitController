@@ -143,8 +143,8 @@ namespace GHBit {
     export enum enButtonState {
         //% blockId="Press" block="Press"
         Press = 0,
-        //% blockId="Realse" block="Realse"
-        Realse = 1
+        //% blockId="Release" block="Release"
+        Release = 1
     }
     
     export enum enButton {
@@ -375,6 +375,22 @@ namespace GHBit {
         let y = pins.analogReadPin(AnalogPin.P2);
     	return y;
     }
+    
+    //% blockId=GHBit_JoyStickKey block="JoyStick Button %value"
+    //% weight=95
+    //% blockGap=10
+    //% color="#C814B8"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
+    export function JoyStickKey(value: enButtonState): boolean {
+        pins.setPull(DigitalPin.P8, PinPullMode.PullUp);
+        let z = pins.digitalReadPin(DigitalPin.P8);
+	if((z==0)&&(value==enButtonState.Press))
+	    return true;
+	else if((z==1)&&(value==enButtonState.Release))
+	    return true;
+	else
+	    return false;
+    }    
     
     //% blockId=GHBit_Button block="Button|num %num|value %value"
     //% weight=95
