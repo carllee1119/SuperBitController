@@ -260,7 +260,7 @@ namespace GHBit {
         GHBit.RGB_Program().show();
     }
 */    
-    //% blockId=GHBit_Min_Motor_Shake block="Min_Motor_Shake|value %value"
+    //% blockId=GHBit_Min_Motor_Shake block="vibrate %value"
     //% weight=97
     //% blockGap=10
     //% color="#C814B8"
