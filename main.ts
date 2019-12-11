@@ -110,7 +110,7 @@ namespace GHBit {
         //% blockId="speed3" block="3"
         speed3 = 4000
     }
-    
+/*
     export enum enRocker {
         //% blockId="Nostate" block="Nostate"
         Nostate = 0,
@@ -125,7 +125,21 @@ namespace GHBit {
         //% blockId="Press" block="Press"
         Press
     }
-    
+ */   
+ 
+     export enum enRocker {
+         //% blockId="Centre" block="Centre"
+         Nostate = 0,
+         //% blockId="Up" block="Up"
+         Up,
+         //% blockId="Down" block="Down"
+         Down,
+         //% blockId="Left" block="Left"
+         Left,
+         //% blockId="Right" block="Right"
+         Right
+     }
+
     export enum enButtonState {
         //% blockId="Press" block="Press"
         Press = 0,
@@ -267,6 +281,8 @@ namespace GHBit {
 /*
     //% blockId=GHBit_Rocker block="JoyStick Direction|value %value"
 */
+
+/*
     //% blockId=GHBit_Rocker block="JoyStick Direction %value"
     //% weight=96
     //% blockGap=10
@@ -310,7 +326,36 @@ namespace GHBit {
             return false;
 
     }
-    
+*/
+   
+    //% blockId=GHBit_Rocker block="JoyStick Direction %value"
+    //% weight=96
+    //% blockGap=10
+    //% color="#C814B8"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=6
+    export function Rocker(value: enRocker): boolean {
+        let x = pins.analogReadPin(AnalogPin.P1);
+        let y = pins.analogReadPin(AnalogPin.P2);
+        let now_state = enRocker.Nostate;
+
+        if (x < 200){		// 上
+            now_state = enRocker.Up;
+        }
+        else if (x > 900){ 	//下
+            now_state = enRocker.Down;
+        }else{  		// 左右
+            if (y < 200){ 	//右
+                now_state = enRocker.Right;
+            }else if (y > 900){ //左
+                now_state = enRocker.Left;
+            }
+        }
+        if (now_state == value)
+            return true;
+        else
+            return false;
+    }
+
     //% blockId=GHBit_JoyStickX block="JoyStick X %value"
     //% weight=96
     //% blockGap=10
