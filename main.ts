@@ -141,9 +141,9 @@ namespace GHBit {
      }
 
     export enum enButtonState {
-        //% blockId="Press" block="Press"
+        //% blockId="Press" block="Pressed"
         Press = 0,
-        //% blockId="Release" block="Release"
+        //% blockId="Release" block="Released"
         Release = 1
     }
     
@@ -392,7 +392,7 @@ namespace GHBit {
 	    return false;
     }    
     
-    //% blockId=GHBit_Button block="Button %num with %value"
+    //% blockId=GHBit_Button block="Button %num %value"
     //% weight=95
     //% blockGap=10
     //% color="#C814B8"
