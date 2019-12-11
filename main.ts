@@ -392,7 +392,7 @@ namespace GHBit {
 	    return false;
     }    
     
-    //% blockId=GHBit_Button block="Button|num %num|value %value"
+    //% blockId=GHBit_Button block="Button %num with %value"
     //% weight=95
     //% blockGap=10
     //% color="#C814B8"
